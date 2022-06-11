@@ -87,7 +87,7 @@ async def start_(c: Client, message: Message):
         f"""ههݪاެ حبيب {message.from_user.mention()} ❤️‍🔥\n
 اެناެ بَۅت بَمميࢪ࣪اެتَ متَعدَدةَ ݪتشغِيݪ اެݪاغاެنِي فَي اެݪمَجمَۅعاتَ 🥇.
 
--› [alamer 𖢅](http://t.me/W_N_Q_SH)
+-› [قناة المطور 𖢅](http://t.me/W_N_Q_SH)
 """,
         reply_markup=InlineKeyboardMarkup(
             [
@@ -106,7 +106,7 @@ async def start_(c: Client, message: Message):
 
 
 @Client.on_message(
-    command(["الاوامر", f"alive@{BOT_USERNAME}"]) & filters.group & ~filters.edited
+    command(["#الاوامر", f"alive@{BOT_USERNAME}"]) & filters.group & ~filters.edited
 )
 @check_blacklist()
 async def alive(c: Client, message: Message):
